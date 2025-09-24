@@ -12,5 +12,5 @@ app.set('view engine', 'ejs')
 app.use(web)
 
 app.listen(3000, () => {
-    console.log("aplikasi berjalan di http://localhost:3000")
+    console.log("Aplikasi berjalan di http://localhost:3000")
 })

@@ -6,7 +6,12 @@ web.get('/', (req, res) => {
     res.render ('index')
 })
 web.get('/:username', (req, res) =>{
-    res.render('public-profile')
+    const username = req.params.username
+    res.render( "public-profile" , {
+        title : username,
+        username : username,
+        bio: "Ini adalah Aku! Raja Mexico! El Matadore Salvador Tequila El Conthole"
+    })    
 })
 
 export default web
