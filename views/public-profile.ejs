@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,18 +15,34 @@
 
   <body class="d-flex align-item-center py-4">
     <main class="container text-center">
-      <div class="profile-card max-auto p-3">
+      <div class="profile-card mx-auto p-3">
         <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQpUFEj2pEKzO8ABUmmFsYABQGdOMlcs6nB-rCuAlfyruXoyUCcknlKdMXyYisQ2N3Ja-zplLhf0yH3qjMQmfesfDeFpXBBqmmgGljIQ" 
         class="profile-pic rounded-circle mb-3 shadow">
 
 
-        <h1 class="username h4", style="font-weight: bold; color: wheat;"><%=username%>'s Famous Last Word</h1>
+        <h1 class="username h4", style="font-weight: bold; color: wheat;"><%=username%></h1>
         <p class="bio mb-4 px-3">"<%= bio%>"</p>
         <div class = "d-grid gap-3" >
-          <a href="/" class="btn btn-glass btn-lg", style="font-weight: bold; color: wheat;">Youtube</a>
-          <a href="/" class="btn btn-glass btn-lg", style="font-weight: bold; color: wheat;">Instagram</a>
-          <a href="/" class="btn btn-glass btn-lg", style="font-weight: bold; color: wheat;">X</a>
+          <a href="/" class="btn btn-glass btn-lg"><i class="bi bi-youtube"> </i>Youtube</a>
+          <a href="/" class="btn btn-glass btn-lg"><i class="bi bi-instagram"> </i>Instagram</a>
+          <a href="/" class="btn btn-glass btn-lg"><i class="bi bi-twitter-x"> </i>X</a>
         </div>
+        
+        <div class="social-icons mt-5">
+           <a href="/" class ="mx-auto">
+            <i class = "bi bi-whatsapp"></i>
+           </a>
+           <a href="/" class ="mx-auto">
+            <i class = "bi bi-tiktok"></i>
+           </a>
+           <a href="/" class ="mx-auto">
+            <i class = "bi bi-github"></i>
+           </a>
+        
+        </div>
+        <footer class = "mt-5 text-white-50">
+          <p>&copy; 2025 <%= username %></p>
+        </footer>
       </div>
 
     </main>
