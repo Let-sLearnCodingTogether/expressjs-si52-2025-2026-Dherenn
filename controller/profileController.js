@@ -8,11 +8,13 @@ export const publicProfile = (req, res) =>{
 
 }
 
+
 export const privateProfile = async(req, res)=>{
     try{ 
+        const user = req.user;
         res.status(200).json({
             message: "Private Profile Berhasil Di Akses",
-            data:null,
+            data:user,
         });
 
     }catch (error) {

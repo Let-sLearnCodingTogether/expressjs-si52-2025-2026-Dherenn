@@ -11,7 +11,7 @@ export const protect = (req, res, next) =>{
                 err: err || "Tidak Valid",
             });
         }
-        req.user = user
+        req.user = user;
         return next(); //untuk mengizinkan user lewat
     }
     )(req, res, next);
